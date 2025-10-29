@@ -3,94 +3,120 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
-.high{
+
+p {
+    font-size: 20px;
+}
+
+.high {
     background-color: #1b1919;
     padding: 5px 0;
 }
-.high .container{
+
+.high .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.container{
+
+.container {
     margin: 0 auto;
     width: 90%;
 }
-.soial{
+
+.soial {
     max-width: 45%;
 }
 
-.soial a{
+.soial a {
     text-decoration: none;
     color: #0dec15;
     font-size: 23px;
     margin: 0 10px;
 }
-.soial a:hover{
+
+.soial a:hover {
     color: rgb(243, 248, 243);
 }
-.high .contact{
+
+.high .contact {
     padding: 10px;
     font-size: 20px;
 }
-.high .contact i{
+
+.high .contact i {
     color: #0dec15;
 }
-.high .contact span{
+
+.high .contact span {
     margin-right: 15px;
     color: rgb(232, 243, 230);
-}   
-.high .contact a{
+}
+
+.high .contact a {
     text-decoration: none;
     color: black;
     font-size: 16px;
 }
-.main-nav{
+
+.main-nav {
     background-color: #fefdfd;
 }
+
 .main-nav ul {
     display: flex;
 }
-.main-nav a{
+
+.main-nav a {
     font-weight: 450;
     font-size: 20px;
     color: rgb(15, 14, 14);
 }
+
 .main-nav a:visited {
-  background-color: #0dec15;
+    background-color: #0dec15;
 }
+
 .main-nav ul li {
     margin-left: 10px;
     padding: 25px 15px;
 }
+
 a {
     text-decoration: none;
 }
+
 ul {
     list-style: none;
 }
-.main-nav .container{
+
+.main-nav .container {
     display: flex;
     justify-content: flex-end;
     align-items: stretch;
 }
-.main-nav ul li:active,.main-nav ul li:hover{
+
+.main-nav ul li:active,
+.main-nav ul li:hover {
     background-color: #0dec15;
     font-weight: bold;
 }
-.pic{
+
+.pic {
     height: 70vh;
     min-height: 500px;
-    background-image: url('./Image/pic.jpg'); 
+    background-image: url('./Image/pic.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -98,37 +124,45 @@ ul {
     align-items: center;
     color: #fff;
 }
-.pic-content{
+
+.pic-content {
     position: relative;
     z-index: 2;
     padding-left: 200px;
     padding-top: 18%;
 }
-.pic h1{
+
+.pic h1 {
     font-size: 80px;
     font-weight: 600;
-    color: #0dec15;;
+    color: #0dec15;
+    ;
 }
-.pic p{
+
+.pic p {
     font-size: 25px;
     color: #fff;
     text-align: left;
 }
-.services{
+
+.services {
     padding: 50px 0;
     text-align: center;
 }
-.services h2{
+
+.services h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
-.services p{
-    font-size: 18px;
+
+.services p {
+    font-size: 22px;
     color: #555;
     max-width: 600px;
     margin: 0 auto;
     margin-bottom: 40px;
 }
+
 .service-cards-container {
     display: flex;
     justify-content: space-between;
@@ -138,8 +172,8 @@ ul {
 .service-card {
     background: #fff;
     padding: 40px 30px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    min-height: 200px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    min-height: 200px;
 }
 
 .service-card h3 {
@@ -162,7 +196,7 @@ ul {
 
 .about-image img {
     border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .about-text h3 {
@@ -197,20 +231,21 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    
+
 }
 
 .service-card {
     background: #fff;
     padding: 40px 30px;
     border-bottom: 3px solid #0dec15;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 .service-card:hover {
     transform: translateY(-7px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-icon {
@@ -244,8 +279,9 @@ ul {
 
 .gallery-item img {
     width: 100%;
-    height: 250px;
+    height: 400px;
     object-fit: cover;
+    transition: all 0.3s ease;
 }
 
 .gallery-item:hover img {
@@ -266,7 +302,7 @@ ul {
     border-radius: 8px;
     text-align: center;
     padding: 30px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     position: relative;
 }
@@ -275,7 +311,7 @@ ul {
 
 .pricing-plan:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-plan h3 {
@@ -315,6 +351,7 @@ ul {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    margin-bottom: 50px;
 }
 
 .contact-form,
@@ -332,7 +369,6 @@ ul {
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
 }
 
@@ -466,7 +502,7 @@ footer {
 }
 
 .section-description {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #777;
     max-width: 700px;
     margin: 0 auto 50px auto;
@@ -490,7 +526,75 @@ footer {
     border-color: #4e864f;
 }
 
-section{
+section {
     align-content: center;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .high .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .service-cards-container,
+    .gallery-grid,
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pic-content {
+        padding-left: 20px ;
+        padding-top: 80px ;
+    }
+
+    .pic h1 {
+        font-size: 40px ;
+        margin-left: 20%;
+    }
+
+    .pic p {
+        font-size: 18px ;
+        margin-left: 20%;
+    }
+
+    .main-nav ul li {
+        padding: 12px 0 ;
+    }
+
+    .social {
+        max-width: 100% ;
+    }
+
+    .soial a {
+        font-size: 20px ;
+        margin: 0 5px ;
+    }
+
+    .high .contact{
+        font-size: 18px;
+    }
 }
